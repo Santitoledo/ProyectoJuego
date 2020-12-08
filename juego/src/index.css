@@ -11,7 +11,42 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+#root{
+  background-color: rgb(25, 136, 22);
+}
 
 #elegir li {
   list-style: none;
 }
+#titulo1{
+  text-align: center;
+}
+h2{
+  text-align: center;
+}
+ul{
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+}
+
+
+@media (max-width: 810px) {
+  
+.img{
+  width: 70px;
+  height: 70px;
+  
+}
+}
+@media (max-width: 480px) {
+  
+  ul{
+    display: block;
+  }
+  .img{
+    width: 100px;
+    height: 100px;
+    
+  }
+  }

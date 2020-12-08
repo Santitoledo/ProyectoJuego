@@ -43,11 +43,11 @@ const App = () =>{
       }
   return(
     <main>
-      <h1>Piedra, Papel, Tijera, Lagarto o Spock</h1>
+      <h1 id="titulo1">Piedra, Papel, Tijera, Lagarto o Spock</h1>
       <h2>Elije una figura!</h2>
       <ul id="elegir">
         {elementos.map((elegida,i)=>
-        <li key={i} data-id={i} onClick={jugar}><img src={"img/" + elegida} alt="" /></li>)}
+        <li key={i} data-id={i} onClick={jugar}><img class="img" src={"img/" + elegida} alt="" /></li>)}
       </ul>
       {Resultado}
     </main>
