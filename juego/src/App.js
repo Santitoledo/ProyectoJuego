@@ -44,7 +44,7 @@ const App = () =>{
       <h1>Piedra, Papel, Tijera, Lagarto o Spock</h1>
       <ul id="elegir">
         {elementos.map((el,i)=>
-        <li key={i} data-id={i} onClick={jugar}><img src={"src/img/" + el} alt="" /></li>)}
+        <li key={i} data-id={i} onClick={jugar}><img src={"public/img/" + el} alt="" /></li>)}
       </ul>
       {Resultado}
     </main>
