@@ -18,7 +18,7 @@ const App = () =>{
       setGanador("Empate");
     }
     else if((j1 === 0 && pc === 2)||(j1 ===1 && pc === 0)||(j1 === 2 && pc ===1)||(j1===0 && pc===3)||(j1===3 && pc === 4)||(j1===4 && pc === 2)||(j1===2 && pc ===3)||(j1===3 && pc===1)||(j1===1 && pc ===4)||(j1===4 && pc === 0)){
-      setGanador("ganaste!!!")
+      setGanador("ganaste!")
     }
     else {
       setGanador("gano PC!");
