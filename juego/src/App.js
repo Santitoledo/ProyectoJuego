@@ -31,8 +31,9 @@ const App = () =>{
         if (manos.length !== 0){
           return(
             <section>
-              <p>Jugador 1:<img src={"img/"+ elementos[manos[0]]}/></p>
-              <p>PC:<img src={"img/" + elementos[manos[1]]}/></p>
+              <p>Jugador 1:<img src={"img/"+ elementos[manos[0]]} alt=""/></p>
+              <p>VS</p>
+              <p>PC:<img src={"img/" + elementos[manos[1]]} alt=""/></p>
               <p>{mensajeGanador}</p>
               <p> Las tijeras cortan el papel, el papel envuelve la piedra, la piedra aplasta al lagarto, el lagarto envenena a Spock, Spock aplasta las tijeras, las tijeras decapitan al lagarto, el lagarto devora el papel, el papel desaprueba a Spock, Spock desintegra la piedra y, como siempre, la piedra aplasta las tijeras.</p>
             </section>
@@ -47,7 +48,7 @@ const App = () =>{
       <h2>Elije una figura!</h2>
       <ul id="elegir">
         {elementos.map((elegida,i)=>
-        <li key={i} data-id={i} onClick={jugar}><img class="img" src={"img/" + elegida} alt="" /></li>)}
+        <li key={i} data-id={i} onClick={jugar}><img className="img" src={"img/" + elegida} alt="" /></li>)}
       </ul>
       {Resultado}
     </main>
