@@ -21,7 +21,7 @@ const App = () =>{
       setGanador("ganaste!")
     }
     else {
-      setGanador("gano PC");
+      setGanador("gano PC!!");
     }
     setElegidos(jugadores);
   }
