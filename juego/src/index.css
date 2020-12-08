@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: lightgreen;
 }
 
 code {
@@ -13,21 +14,35 @@ code {
 }
 #root{
   background-color: rgb(25, 136, 22);
+  margin-top: 10%;
 }
 
 #elegir li {
   list-style: none;
+  
 }
 #titulo1{
   text-align: center;
+  font-family: 'Butterfly Kids', cursive;
+font-family: 'Nerko One', cursive;
 }
 h2{
   text-align: center;
+  font-family: 'Butterfly Kids', cursive;
+font-family: 'Nerko One', cursive;
 }
 ul{
   text-align: center;
   display: flex;
   justify-content: space-around;
+  padding-inline-start: 0;
+  
+}
+.img{
+  cursor: pointer;
+  -webkit-box-shadow: 2px 2px 5px rgb(5, 5, 5);
+  -moz-box-shadow: 2px 2px 5px rgb(0, 0, 0);
+  margin: 2%;
 }
 
 
@@ -37,6 +52,9 @@ ul{
   width: 70px;
   height: 70px;
   
+}
+#root{
+  margin-top: 0;
 }
 }
 @media (max-width: 480px) {
