@@ -10,19 +10,19 @@ const App = () =>{
   const [mensajeGanador, setGanador]= useState([]);
     const jugar=(elegida)=>{
       const j1= parseInt(elegida.currentTarget.dataset.id);
-      const pc= Math.floor(Math.random() + elementos.length);
+      const pc= Math.floor(Math.random() * (elementos.length));
       const jugadores =[];
       jugadores.push(j1);
       jugadores.push(pc);
-
+      
       if (j1 === pc){
         setGanador("Empate");
       }
       else if((j1 === 0 && pc === 2)||(j1 ===1 && pc === 0)||(j1 === 2 && pc ===1)||(j1===0 && pc===3)||(j1===3 && pc === 4)||(j1===4 && pc === 2)||(j1===2 && pc ===3)||(j1===3 && pc===1)||(j1===1 && pc ===4)||(j1===4 && pc === 0)){
-        setGanador("ganaste!")
+        setGanador("Ganaste!")
       }
       else {
-        setGanador("gano PC!");
+        setGanador("Gano PC!");
       }
       setElegidos(jugadores);
     }
@@ -31,11 +31,17 @@ const App = () =>{
         if (manos.length !== 0){
           return(
             <section>
-              <p>Jugador 1:<img src={"img/"+ elementos[manos[0]]} alt=""/></p>
-              <p>VS</p>
-              <p>PC:<img src={"img/" + elementos[manos[1]]} alt=""/></p>
-              <p>{mensajeGanador}</p>
-              <p> Las tijeras cortan el papel, el papel envuelve la piedra, la piedra aplasta al lagarto, el lagarto envenena a Spock, Spock aplasta las tijeras, las tijeras decapitan al lagarto, el lagarto devora el papel, el papel desaprueba a Spock, Spock desintegra la piedra y, como siempre, la piedra aplasta las tijeras.</p>
+              <div className="box1">
+                <h3 className="player">Jugador</h3>
+                <img className="img1"src={"img/"+ elementos[manos[0]]} alt=""/>
+              </div>
+              <p id="vs">VS</p>
+              <div className="box1">
+              <h3 className="player">PC</h3>
+              <img className="img1"src={"img/" + elementos[manos[1]]} alt=""/>
+              </div>
+              <p id="mensaje">{mensajeGanador}</p>
+              <p id="descripcion"> Las tijeras cortan el papel, el papel envuelve la piedra, la piedra aplasta al lagarto, el lagarto envenena a Spock, Spock aplasta las tijeras, las tijeras decapitan al lagarto, el lagarto devora el papel, el papel desaprueba a Spock, Spock desintegra la piedra y, como siempre, la piedra aplasta las tijeras.</p>
             </section>
           )
         }else{
@@ -50,7 +56,8 @@ const App = () =>{
         {elementos.map((elegida,i)=>
         <li key={i} data-id={i} onClick={jugar}><img className="img" src={"img/" + elegida} alt="" /></li>)}
       </ul>
-      {Resultado}
+      <Resultado/>
+      
     </main>
   )
 }

@@ -14,7 +14,9 @@ code {
 }
 #root{
   background-color: rgb(25, 136, 22);
-  margin-top: 10%;
+  margin-top: 2%;
+  float: left;
+  width: 100% ;
 }
 
 #elegir li {
@@ -43,6 +45,49 @@ ul{
   -webkit-box-shadow: 2px 2px 5px rgb(5, 5, 5);
   -moz-box-shadow: 2px 2px 5px rgb(0, 0, 0);
   margin: 2%;
+  -webkit-transition:all .9s ease;
+}
+.box1{
+  width: 35%;
+  margin: 2% 5%;
+  float: left;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.box1 img{
+  -webkit-box-shadow: 2px 2px 5px rgb(5, 5, 5);
+  -moz-box-shadow: 2px 2px 5px rgb(0, 0, 0);
+  margin: 2%;
+  -webkit-transition:all .9s ease;
+}
+.player{
+  text-align: center;
+  width: 100%;
+}
+#vs{
+  width: 10%;
+  float: left;
+  text-align: center;
+  margin-top: 10%;
+  font-family: 'Butterfly Kids', cursive;
+  font-family: 'Nerko One', cursive;
+  font-size: 2em;
+}
+#mensaje{
+  width: 80%;
+  margin: 2% 10%;
+  float: left;
+  text-align: center;
+  font-family: 'Butterfly Kids', cursive;
+  font-family: 'Nerko One', cursive;
+  font-size: 3em;
+}
+#descripcion{
+  text-align: justify;
+  width: 90%;
+  margin: 2% 5%;
+  float: left;
 }
 
 
