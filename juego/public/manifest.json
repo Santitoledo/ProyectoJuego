@@ -1,6 +1,9 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "PPTLS",
+  "name": "Piedra, Papel, Tijera, Lagarto o Spock",
+  "orientation": "portrait",
+  "Scope": "/",
+  "start_url": "/",
   "icons": [
     {
       "src": "favicon.ico",
@@ -18,8 +21,8 @@
       "sizes": "512x512"
     }
   ],
-  "start_url": ".",
-  "display": "standalone",
+  "splash_pages": null,
+  "display": "fullscreen",
   "theme_color": "#000000",
   "background_color": "#ffffff"
 }

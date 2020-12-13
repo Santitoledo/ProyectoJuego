@@ -18,7 +18,14 @@ code {
   float: left;
   width: 100% ;
 }
-
+main{
+  float: left;
+  width: 100%;
+}
+#box{
+  float: left;
+  width: 100%;
+}
 #elegir li {
   list-style: none;
   
@@ -38,8 +45,13 @@ ul{
   display: flex;
   justify-content: space-around;
   padding-inline-start: 0;
-  
 }
+#button{
+  width: 20%;
+  margin: 1% 40%;
+  background-color:  lightgreen;
+}  
+
 .img{
   cursor: pointer;
   -webkit-box-shadow: 2px 2px 5px rgb(5, 5, 5);
@@ -64,15 +76,16 @@ ul{
 .player{
   text-align: center;
   width: 100%;
+  font-size: 2em;
 }
 #vs{
   width: 10%;
   float: left;
   text-align: center;
-  margin-top: 10%;
+  margin-top: 15%;
   font-family: 'Butterfly Kids', cursive;
   font-family: 'Nerko One', cursive;
-  font-size: 2em;
+  font-size: 3em;
 }
 #mensaje{
   width: 80%;
@@ -81,13 +94,14 @@ ul{
   text-align: center;
   font-family: 'Butterfly Kids', cursive;
   font-family: 'Nerko One', cursive;
-  font-size: 3em;
+  font-size: 4em;
 }
 #descripcion{
   text-align: justify;
   width: 90%;
   margin: 2% 5%;
   float: left;
+  font-size: 2em;
 }
 
 
@@ -101,6 +115,21 @@ ul{
 #root{
   margin-top: 0;
 }
+#vs{
+  margin-top: 25%;
+}
+}
+@media (max-width: 600px){
+  #vs{
+    margin-top: 30%;
+  }
+  #descripcion{
+    font-size: 1em;
+  }
+  .img1{
+    width: 100px;
+    height: 100px;
+  }
 }
 @media (max-width: 480px) {
   
@@ -108,8 +137,14 @@ ul{
     display: block;
   }
   .img{
-    width: 100px;
-    height: 100px;
+    width: 75px;
+    height: 75px;
     
+  }
+  #button{
+    width: 70px;
+  }
+  #root{
+    margin-top: 2%;
   }
   }
